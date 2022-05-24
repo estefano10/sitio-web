@@ -1,0 +1,751 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.foto{
+    place-content: down;
+}
+
+
+body{ 
+    background-color: #F5F6F7;
+    background-image: url(../images/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+    background-size: 115px;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+                 /*BARRA DE NAVEGACIÓN*/
+header nav{
+    width: 100%;
+    height: 5em;
+    background-color:#202020;
+    box-shadow: 1px 4px 8px #3a3a3a;
+    display: flex;
+    position: fixed;
+    align-items: center;    
+    justify-content: flex-end;
+}
+
+
+.menu{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   margin-right: 10em;
+}
+.menu li {
+    margin: 0 1em;
+    padding: 1em 1em ;
+}
+.contacto_menu{
+    background-color:  greenyellow;
+    border-radius: 50px;
+    color: #350c36;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.menu li:hover {
+    background-color: #7e7e7e88;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+                 /*PORTADA*/
+
+#portada{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    background-color: orange;
+ 
+    
+}
+
+#portada .lado-a{
+    flex: 1;
+    padding: 20% 5% 20% 15%;
+    
+}
+.lado-a h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: greenyellow;
+    text-shadow: 5px  6px black;
+    line-height: 0.8em; 
+       
+}
+.lado-a h2{
+    font-size: 2rem;
+    
+}
+.lado-a p{
+    padding-top: 1em; 
+    font-size: 1.2rem;
+}
+
+.lado-a a{
+    text-transform: uppercase;
+    background-color: #350c36;
+    text-decoration: none;
+    color: #4abaae;
+    padding: 10px;
+    border: 1px solid #350c36;
+    border-radius: 25px;}
+
+.lado-a a:hover{
+    text-transform: uppercase;
+    background-color: #4abaae;
+    color: #350c36;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 30px;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.116);
+    transition: 0.4s;
+    font-weight: bold;
+    
+}
+#portada .lado-b{
+    flex: 1;
+   
+}
+.foto{
+    margin: 0 auto;
+}
+.foto img{
+     width: 80%;
+     margin: 35% auto;
+}
+
+                 /*SECCION CONOCIMIENTOS*/
+
+#conocimientos {
+    width: 50%;
+    margin: 5% auto 15% auto;
+    text-align: center;
+}
+#conocimientos h1{
+    padding-top: 5%;
+    font-size: 3em;
+}
+#conocimientos p{
+    padding-top: 5%;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.cajas-conocimientos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.cajas-conocimientos div {
+    flex-direction: row;
+    border-radius: 10px;
+    width: 30%;
+    height: 16em;
+    margin-top:5%;
+    background-color:#202020;
+    box-shadow: 1px 2px 6px #3a3a3a;
+    color: #fedb21;
+}
+.cajas-conocimientos div i{
+   margin: 12% auto;
+   font-size: 8rem;
+}
+
+.cajas-conocimientos div:hover{
+color: #202020;
+background-color: #fedb21;
+transition: 0.4s;
+}
+
+
+
+
+
+                 /*FORMULARIO*/
+
+#formulario{
+    width: 60%;
+    height: 33em;
+    border-radius: 25px;
+    border: 1.5px solid #4abaae;
+    background-color: #e6e6e6;
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.columnas_de_contacto{
+    width: 50%;
+    padding: 0 2em;
+}
+.columnas_de_contacto p{
+ width: 80%;
+
+}
+.columnas_de_contacto h2{
+    font-size: 3rem;
+    margin: 1em 1em;
+    text-shadow: 2px  3px 5px rgba(85, 85, 85, 0.568);
+}
+
+.columnas_de_contacto table{
+    margin-top: 3em;
+}
+
+.columnas_de_contacto table tr{
+    height: 2em;
+    font-size: 1.2rem;
+}
+.columnas_de_contacto table tr td{
+    padding-left: 1rem;
+    height: 2.2em;
+}
+.columnas_de_contacto table tr a{
+    color: #202020;
+}
+.columnas_de_contacto table tr:hover .redes{
+    font-size: 1.3rem;
+}
+
+.columnas_de_contacto table tr td i{
+    color: #202020;
+    padding: 0.5em;
+    border-radius: 50px;
+}
+.columnas_de_contacto table tr:hover td i{
+    color: #e6e6e6;
+    background-color: #202020;
+}
+
+.nombre_apellido{
+    display: flex;
+}
+label{
+display: block;
+margin: 0.5em 0;
+}
+.nombreyapellido{
+    width: 50%;
+}
+input{
+   border-radius: 15px;
+   height: 3em;
+   border: 1px solid white;
+}
+input:focus, textarea:focus{
+    border: 1px solid #ff9d00;
+    box-shadow: 0px 0px 5px #ff9d00;
+    
+
+}
+ 
+textarea{
+    width: 90%; 
+    border-radius: 15px;
+    height: 7em;
+    border: 1px solid white;
+}
+
+
+.nombreyapellido input{
+    width: 80%;
+}
+
+.bloque_datos input, textarea{
+    width: 90%;
+}
+.bloque_datos textarea{
+    width: 90%;
+    padding: 0.5em 0;
+    resize: none;
+
+}
+.submit input{
+    width: 5em;
+    margin: 0.5em 0;
+    background-color: greenyellow;
+}
+
+.submit input:hover{
+    font-weight: bold;
+    transition: 0.4s;
+    box-shadow: 0px  3px 5px rgba(85, 85, 85, 0.568);
+}
+
+                 /*FOOTER*/
+
+.footer{
+    background: #202020;;
+    height: 13em;
+    margin-top: 5em;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.menu_footer{
+    list-style: none;
+    display: flex;
+}
+
+.menu_footer li {
+    padding: 1em 1em;
+}
+
+.menu_footer li a{
+    color: #fedb21;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.menu_footer li a:hover{
+    border-bottom: 2px solid #fedb21;
+}
+    
+
+
+
+
+
+
+
+footer p{
+    text-align: center;
+    padding-top: 1rem;
+    color: #e6e6e6;
+    
+}
+
+                           /*MEDIA QUERIES*/
+
+@media(max-width: 1024px){
+    body{ 
+        background-image: none;
+     }
+        /*PORTADA*/
+
+
+    #portada .lado-a{
+        flex: 1;
+        padding: 20% 5% 0% 5%;
+        
+    }
+    .lado-a h1{
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.5rem;
+        text-shadow: 3px  2px #4abaae;
+        line-height: 0.8em; 
+
+    }
+    .lado-a h2{
+        font-size: 1rem;
+    }
+
+    .lado-a p{
+        padding-top: 0.8em; 
+        font-size: 1rem;
+    }
+
+    .lado-a a{
+        color: #4abaae;
+        padding: 8px;
+        border: 1px solid #350c36;
+        border-radius: 25px;
+        font-size: 0.8rem;
+    }
+    .lado-a a:hover{
+        text-transform: uppercase;
+        background-color: #4abaae;
+        color: #350c36;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 30px;
+        text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.116);
+        transition: 0.4s;
+        font-weight: bold;
+        
+    }
+
+
+    /*CONOCIMIENTOS*/
+    
+        #conocimientos {
+            width: 70%;
+            margin: 5% auto 15% auto;
+            text-align: center;
+        }
+        #conocimientos h1{
+            padding-top: 5%;
+            font-size: 3em;
+        }
+        #conocimientos p{
+            padding-top: 5%;
+            width: 70%;
+            margin: 0 auto;
+            
+        }
+        .cajas-conocimientos{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        }
+
+        .cajas-conocimientos div {
+            border-radius: 10px;
+            width: 30%;
+            height: 200px;
+            margin-top:5%;
+        }
+
+        .cajas-conocimientos div i{
+            font-size: 6rem;
+         }
+
+    
+    
+   
+    
+   
+    /*Formulario*/
+
+    #formulario{
+        width: 85%;
+        height: 33em;
+        
+    }
+    #formulario label{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+                                          /*Pantallas de 768px o menos*/
+@media(max-width: 768px){
+
+    /*NAV*/
+header nav{
+display: none;
+}
+                    /*PORTADA*/ /*Acá me falta sacar el espacio entre el lado a y b y centrarlo*/
+#portada{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} 
+
+ .lado-a{
+    flex: 1;
+    padding: 20% auto 0% auto;
+    height: 400px;
+    
+}
+.lado-a h1{
+    font-size: 5rem;
+    text-shadow: 3px  4px #4abaae;
+ 
+}
+.lado-a h2{
+    font-size: 2rem;
+    
+}
+.lado-a p{
+    padding-top: 1em; 
+    font-size: 1.2rem;
+}
+
+#portada .lado-b{
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+   
+}
+.lado-b img{
+    width: 90%;
+    margin: 15% auto 25% auto;
+}
+                      /*CONOCIMIENTOS*/
+#conocimientos {
+    width: 85%;
+}
+.cajas-conocimientos div {
+    height: 220px;
+  
+}
+.cajas-conocimientos div i{
+    font-size: 6rem;
+ }
+
+                    
+
+
+
+                   /*FORMULARIO*/
+
+.columnas_de_contacto p{
+ width: 80%;
+ font-size: 0.9rem;
+
+}
+.columnas_de_contacto h2{
+    font-size: 2rem;
+}
+
+.columnas_de_contacto table{
+    margin-top: 2em;
+}
+
+.columnas_de_contacto table tr{
+    height: 1.8em;
+    font-size: 1rem;
+}
+.columnas_de_contacto table tr td{
+    padding-left: 0.5rem;
+    height: 2.2em;
+}
+
+.nombre_apellido{
+    display: flex;
+    flex-direction: column;
+}
+.nombreyapellido{
+    width: 110%;
+}
+
+        
+
+
+}/* Fin Pantallas de 768px o menos*/
+
+@media(max-width: 680px){
+    #formulario{
+        width: 80%;
+        flex-direction: column;
+        height: 1000px;
+     }
+     .columnas_de_contacto p{
+        width:190%;
+       }
+
+       .nombreyapellido input{
+        width: 90%;
+    }
+ 
+     
+   .bloque_datos textarea, .bloque_datos input{
+        width: 90%; 
+
+    }
+
+}
+
+
+
+/*Pantallas de 480px o menos*/
+@media(max-width: 480px){
+   /*CONOCIMIENTOS*/
+    #conocimientos {
+        width: 80%;
+        margin: 5% auto 15% auto;
+        text-align: center;
+    }
+
+    #conocimientos h1{
+        font-size: 2em;
+    }
+
+    .cajas-conocimientos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+
+    .cajas-conocimientos div {
+        border-radius: 10px;
+        width: 45%;
+        height: 180px;
+        margin-top:5%;
+    }
+
+    
+
+        /*FORMULARIO*/
+        #formulario{
+            width: 80%;
+            flex-direction: column;
+            height: 840px;
+         }
+         .columnas_de_contacto{
+            width: 90%;
+        }
+        .columnas_de_contacto p{
+            width:90%;
+           }
+
+        .columnas_de_contacto h2{
+            font-size: 2rem;
+            text-align: center;
+            margin: 0.5em;
+        }
+        
+        .columnas_de_contacto table{
+            margin-top: 0.8em;
+        }
+        
+        .columnas_de_contacto table tr{
+            font-size: 1rem;
+        }
+        .columnas_de_contacto table tr td{
+            height: 2em;
+        }
+       
+
+    
+         
+       .bloque_datos textarea, .bloque_datos input{
+            width: 110%; 
+
+        }
+        .nombreyapellido input{
+            width: 100%;
+        }
+     
+
+        .submit input{
+            margin:  1em;
+
+        }
+        /*FOOTER*/
+
+        .footer{
+            height: 10em;
+            padding: 1.5em;
+        }
+
+        
+        .menu_footer li {
+            padding:0.4em;
+        }
+        
+        .menu_footer li a{
+            font-size: 0.8rem;
+        }
+        
+
+        
+}
+/*Pantallas de 320px o menos*/
+ @media(max-width: 320px){
+     
+  /*CONOCIMIENTOS*/
+  #conocimientos {
+    width: 80%;
+    margin: 5% auto 15% auto;
+    text-align: center;
+}
+#conocimientos h1{
+    font-size: 2em;
+}
+
+.cajas-conocimientos{
+
+    justify-content: center;
+    }
+
+.cajas-conocimientos div {
+    width: 70%;
+    margin-top:10%;
+}
+
+
+
+/*FORMULARIO*/
+
+#formulario{
+    height: 820px;
+ }
+ .columnas_de_contacto{
+    width: 90%;
+}
+.columnas_de_contacto p{
+ width:100%;
+}
+.columnas_de_contacto h2{
+    font-size: 1.8rem;
+    margin: 0.5em auto;
+}
+
+.columnas_de_contacto table tr{
+    font-size: 0.8rem;
+}
+
+.columnas_de_contacto table tr td{
+    padding-left: 0.1rem;
+    height: 2.2em;
+}
+
+.nombreyapellido input{
+    width: 110%;
+}
+.bloque_datos textarea, .bloque_datos input{
+    width: 200px; 
+
+}
+
+
+
+/*FOOTER*/
+
+
+
+.menu_footer li {
+    padding:0.2em;
+}
+
+.menu_footer li a{
+    font-size: 0.6rem;
+}
+footer p{
+    font-size: 0.8rem;
+}
+
+
+}

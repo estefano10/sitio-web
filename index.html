@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Estefano Gigena</title>
+    <link rel="stylesheet" href="estilolanding.css">
+</head>
+
+
+    
+
+    <body>
+        
+        <!-- BARRA DE NAVEGACION -->
+        <header>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#portada">Home</a> </li><!--Elemento1-->
+                    <li> <a href="#conocimientos">Conocimientos</a></li> <!--Elemnto 2-->
+                    <li class="contacto_menu"><a href="#formulario">contacto</a></li><!-- Elemento 3 -->
+                </ul> 
+            </nav> 
+            
+        </header>
+        <main>
+             <!--PRESENTACION-->
+        <section id="portada">
+            <div class="lado-a">
+                <h2>Hola, me llamo</h2>
+                <h1>Estefano Gigena</h1>
+                <p>Estudiante de la carrera de analista de sistemas. Radicado en Argentina</p><br><br><br>              
+                
+            </div>
+           
+            <div class="foto">
+                <img src="foto.jpg" alt="foto perfil" >
+                </div>
+
+        </section>
+         <!--HABILIDADES-->
+        <section id="conocimientos">
+            <div>
+                <h1 >Mis conocimientos</h1>
+                <p>En esta sección pueden encontrar las tecnologías en las que tengo experiencia.</p>
+            </div>
+            
+            <section class="cajas-conocimientos">
+                    <div>
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML 5</h3>
+                    </div>
+                    <div>
+                        <i class="fab fa-css3-alt"></i>
+                        <h3> CSS</h3>
+                    </div>
+                    <div>
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div>
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                    
+
+        </section>
+        </section>
+
+        </section>
+        <!--CONTACTO-->
+         <!--Columna 1: Datos de contactp-->
+        <section id="formulario">
+            <div class="columnas_de_contacto">
+                <h2>Contactame</h2>
+                <p>Espero que mi portfolio te haya servido para conocer un poco de mi y de mi trabajo. Podes dejarme cualquier duda, consulta o comentario completando los datos del formulario.<br>
+                  ¡Gracias por visitar mi sitio!  
+                </p>
+              <table>
+                  <tr >
+                      <td class="redes"><a href="https://www.instagram.com/"  target="_blank"> Instagram: @estefano_gigena</a></td>
+                  </tr>
+                  <tr>
+                    
+                    <td class="redes"><a href="https://github.com/" target="_blank">Github: @estefano10</a> </td>
+                </tr>
+                <tr>
+                   
+                    <td class="redes"><a href="https://www.linkedin.com/" target="_blank">LinkedIn: @estefano_gigena</a></td>
+                </tr>
+                
+            </table>
+            </div>
+            <!--Columna 2:Formulario de contacto-->
+            <div class="columnas_de_contacto">
+                <h2>Escribime</h2>
+
+
+                <form  method="POST" action="procesar.php">
+
+                    <div class="nombre_apellido"> <!--Datos de formulario en línea-->
+
+                        <div class="nombreyapellido">
+                            <label> Nombre: </label>
+                            <input type="text" name="nombre" maxlength="15" placeholder="  Ingresá tu nombre" required="required">
+                        </div>
+
+                        <div class="nombreyapellido">    
+                            <label> Apellido: </label >
+                                <input type="text" name="nombre" maxlength="15" placeholder="  Ingresá tu apellido" required="required">
+                       </div> 
+                    </div><!-- fin de los datos en del formulario en linea-->
+                  
+                 <div class="bloque_datos"><!--Dato del formulario en bloque 1-->
+                     <label >Email:</label>  
+                    <input type="mail" name="mail" placeholder="  Ingresá tu correo electrónico" required="required">
+                </div>
+                 <div  class="bloque_datos"><!--Dato del formulario en bloque 2-->
+                        <label >Mensaje:</label>
+                    <textarea name="reseña" placeholder="  Dejanos tu comentario" ></textarea>
+                </div><!-- fin de los datos en del formulario en bloque-->
+
+
+                 <div class="submit"> <!--Bootçón para envoiar el formulario-->
+                    <input type="submit" value="Enviar"> 
+                 </div>    
+             </div>
+        </form>
+        </section>
+        </main>
+        
+        <footer>
+            <section class="footer">
+                
+                    <nav class="footer_nav"> <!--Seccion de navegación del footer-->
+                        <ul class="menu_footer">
+                            <li><a href="#portada">HOME</a> </li>
+                            <li> <a href="#conocimientos">Conocimientos</a></li> 
+                            <li><a href="#formulario">contacto</a></li>
+                        </ul>
+                    </nav>
+               
+                
+                    
+    
+            </section>
+        </footer>
+    
+    
+      
+
+
+    
+    
+    
+</html> 
